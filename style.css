@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: url("../../Backgrounds/work-space.png");
+    background-image: url("images/work-space.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -70,7 +70,7 @@ a {
 
 .card-image {
     flex: 0 0 35%;
-    background-image: url("../../images/me.jpg");
+    background-image: url("images/avatar.jpg");
     background-size: cover;
     background-position: center;
     transition: 500ms transform ease-out;
