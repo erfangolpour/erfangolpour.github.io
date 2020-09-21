@@ -8,6 +8,7 @@ body {
     background-image: url("images/work-space.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachments: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
