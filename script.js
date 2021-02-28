@@ -29,7 +29,7 @@ function set_slider() {
         if (window.innerWidth <= 600) {
             slideInterval = setInterval(() => {
                 next_slide()
-            }, 5000);
+            }, 3000);
         }
     }, 500);
 }
