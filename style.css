@@ -318,6 +318,10 @@ a {
         opacity: 1;
         font-size: 50px;
     }
+    
+    #skills-container a:hover img {
+        filter: grayscale(0%)
+    }
 }
 
 @media (max-width: 400px) {
