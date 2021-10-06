@@ -109,7 +109,6 @@ Array.from(resumeMenu).forEach(child => {
       previousMenu.classList.remove("active");
 
       targetContent = resumeContent[Array.prototype.indexOf.call(resumeMenu, child)];
-      console.log(targetContent)
       targetContent.style.display = "block";
       child.classList.add("active");
     }
