@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="statics/fav/fav.png" />
+
+    <title>Erfan Golpour</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/text-glitch.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+</head>
+
+<body>
+
+    <nav id="horizontal-navigation">
+        <a href="#main-container" class="active">Home</a>
+        <a href="#projects-container">Projects</a>
+        <a href="#resume-container">Resume</a>
+    </nav>
+
+    <nav id="vertical-navigation">
+        <label for="show-menu" class="show-menu"><span>Menu</span><i class="fas fa-bars" id="menu-bars"></i></label>
+        <input type="checkbox" id="show-menu">
+        <div id="vertical-menu">
+            <a href="#main-container" class="active">Home</a>
+            <a href="#projects-container">Projects</a>
+            <a href="#resume-container">Resume</a>
+        </div>
+    </nav>
+
+    <div id="main-container" menu-index="0" class="container">
+        <div class="container-bg" id="particles-js"></div>
+        <div class="container-text">
+            <h1>Erfan</h1>
+            <h1>Golpour</h1>
+            <hr style="border: none; margin: 40px 0; width: 70%; height: 5px; background-color: #c7d5e0 ;" />
+            <div id="social-media-box">
+                <a href="https://github.com/erfangolpour/"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/erfan_golpour/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/erfan-golpour-9739341b7/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <a href="#projects-container" class="next-slide-btn"><span></span></a>
+    </div>
+
+    <div id="projects-container" menu-index="1" class="container">
+        <div class="container-text">My Projects</div>
+        <div id="projects-box">
+            <div class="project-card">
+                <div class="project-img" style="background-image: url(statics/images/projects/eagleeye.png);"></div>
+                <div class="project-text">
+                    <h2>EagleEye</h2>
+                    <div class="languages">
+                        <a href="https://www.python.org/" class="link" target="_blank">Python</a>
+                    </div>
+                    <p class="description">This project has been pulled straight out of a movie. EagleEye can find an
+                        object of interest (e.g. a dog) by scanning through public cameras and performing object
+                        detection.</p>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/erfangolpour/EagleEye" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <!-- <div class="project-card">
+                <div class="project-img" style="background-image: url(statics/images/projects/minesweeper.png);"></div>
+                <div class="project-text">
+                    <h2>Minesweeper</h2>
+                    <div class="languages">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="link"
+                            target="_blank">HTML,</a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="link" target="_blank">CSS,</a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="link"
+                            target="_blank">Javascript</a>
+                    </div>
+                    <p class="description">The old familiar and classic Minesweeper, this time on your web browser! The
+                        website allows for customization of the size of the board and the density of the mines.</p>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/erfangolpour/MinesWeeper-WebBased" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://erfangolpour.github.io/MinesWeeper-WebBased/" target="_blank">Visit</a>
+                </div>
+            </div> -->
+
+            <div class="project-card">
+                <div class="project-img" style="background-image: url(statics/images/projects/greensignal.png);"></div>
+                <div class="project-text">
+                    <h2>GreenSignal</h2>
+                    <div class="languages">
+                        <a href="https://www.python.org/" class="link" target="_blank">Python</a>
+                    </div>
+                    <p class="description">A personal, console-based server for secure messaging and file transfer over
+                        the local network, powered by RSA and AES encryption algorithms. There are also features
+                        implemented to control the server.</p>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/erfangolpour/GreenSignal" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img" style="background-image: url(statics/images/projects/taom.png);"></div>
+                <div class="project-text">
+                    <h2>The Art of Mathematics</h2>
+                    <div class="languages">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="link"
+                            target="_blank">HTML,</a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="link" target="_blank">CSS,</a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="link"
+                            target="_blank">Javascript</a>
+                    </div>
+                    <p class="description">A small project I did in high school. Mathematical functions can be found
+                        everywhere, even in art and nature. Need evidence? This website contains some examples!</p>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/theartofmathematics/theartofmathematics.github.io" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://theartofmathematics.github.io/" target="_blank">Visit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="resume-container" class="container" menu-index="2">
+        <div id="resume-box">
+            <div id="resume-navigation">
+                <div class="active">About Me</div>
+                <div>Experiences</div>
+                <div>Computer Literacy</div>
+                <div>Skills & Hobbies</div>
+                <div>Education</div>
+            </div>
+            <div id="resume-main">
+                <div id="resume-bio">
+                    <div class="avatar"></div>
+                    <div class="text">
+                        <h2>Erfan Golpour</h2>
+                        <div><i class="fas fa-map-marker-alt"></i>&nbsp; Victoria, Canada</div>
+                        <div><i class="fas fa-code"></i>&nbsp; Web Designer, Python Developer</div>
+                        <div><i class="fas fa-university"></i>&nbsp; Studying at <a href="https://www.uvic.ca/"
+                                class="link" target="_blank">the University of Victoria</a></div>
+                        <div><i class="fas fa-envelope"></i>&nbsp; Email: <a href="mailto:golpourerfan@gmail.com"
+                                class="link">golpourerfan@gmail.com</a></div>
+                    </div>
+                    <a href="statics/documents/Resume (Simplified).pdf" id="download-resume">Download Resume PDF</a>
+                </div>
+                <div id="resume-content">
+                    <div>
+                        <h2><i class="far fa-address-card"></i>&nbsp; About Me</h2>
+                        <p>I am a self-motivated learner with a great passion for Computer Science, especially machine
+                            learning and artificial intelligence. I also find science fascinating and it intrigues me
+                            how every branch of study is in harmony with the others to create the world we live in. I'm
+                            eager to learn, and keen to share what I know.</p>
+                        <hr />
+                        <h2><i class="fas fa-at"></i> Profiles</h2>
+                        <div class="profiles-container">
+                            <a href="https://www.instagram.com/erfan_golpour/" target="_blank">
+                                <div class="bg-img"
+                                    style="background-image: url(statics/images/profiles/instagram.png)"></div>
+                                <div class="data">
+                                    <h2>Instagram</h2>
+                                </div>
+                            </a>
+
+                            <a href="https://twitter.com/EGolpour" target="_blank">
+                                <div class="bg-img" style="background-image: url(statics/images/profiles/twitter.webp)">
+                                </div>
+                                <div class="data">
+                                    <h2>Twitter</h2>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/erfangolpour" target="_blank">
+                                <div class="bg-img" style="background-image: url(statics/images/profiles/github.jpg)">
+                                </div>
+                                <div class="data">
+                                    <h2>Github</h2>
+                                </div>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/erfan-golpour-9739341b7/" target="_blank">
+                                <div class="bg-img" style="background-image: url(statics/images/profiles/linkedin.png)">
+                                </div>
+                                <div class="data">
+                                    <h2>Linkedin</h2>
+                                </div>
+                            </a>
+
+
+                            <a href="https://www.codewars.com/users/fu2ny_c0d3" target="_blank">
+                                <div class="bg-img" style="background-image: url(statics/images/profiles/codewars.png)">
+                                </div>
+                                <div class="data">
+                                    <h2>Codewars</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <br />
+                    </div>
+
+                    <div>
+                        <h2><i class="fas fa-briefcase"></i>&nbsp; Experiences</h2>
+                        <div class="inner-dot-list">
+                            <div>
+                                <div class="info">2018</div>
+                                <div class="splitter">⬤</div>
+                                <div class="data">
+                                    <h3>My First Official Programming Certificate</h3>
+                                    <p>I took a 60-hour Python programming course at Tehran Institute of
+                                        Technology and graduated with a full mark.</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="info">2018</div>
+                                <div class="splitter">⬤</div>
+                                <div class="data">
+                                    <h3>Full Stack Web Developer Course</h3>
+                                    <p>Signed up for a 67-hour course called "Fullstack Web Developer" at Udemy. This
+                                        was my first professional introduction to web design.</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="info">2018 - Now</div>
+                                <div class="splitter">⬤</div>
+                                <div class="data">
+                                    <h3>Github Community</h3>
+                                    <p>I joined GitHub in 2018 to learn and share my projects with others.
+                                        I created a personalized messenger with multiple encryption layers, recreated a
+                                        famous game (i.e. Minesweeper), and shared my favorite project, EagleEye, with
+                                        the community.</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="info">2017 - 2019</div>
+                                <div class="splitter">⬤</div>
+                                <div class="data">
+                                    <h3>Freelancing</h3>
+                                    <p>in 2017, I started to do small projects on a freelance basis. As a few examples,
+                                        I did web design and server maintenance for an elementary schools in my home
+                                        city, and volunteered in a project run by the Ministry of Education of Tehran
+                                        whose objective was to come up with the best design for an online education
+                                        platform.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="info">2016</div>
+                                <div class="splitter">⬤</div>
+                                <div class="data">
+                                    <h3>Robotic Championship League</h3>
+                                    <p>In 2016, I participated in a district-level Robotic Championship League, and
+                                        managed to enter the regional competition. This experience helped me to improve
+                                        my teamwork ablities and problem solving skills.</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="info">2015</div>
+                                <div class="splitter">⬤</div>
+                                <div class="data">
+                                    <h3>First Programming Experience</h3>
+                                    <p>The first time I ever programmed anything, was in 2015 when we built an
+                                        electronic welcome board for my high school. The LCD screen was powered by AVR
+                                        microcontrollers, and my role was to program the integrated
+                                        circuit with C++ in design phase and do the soldering of the circuit in
+                                        implementation phase. This volunteer experience was of high significance to me
+                                        and hugely impacted my future interests.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="info">2012 - 2015</div>
+                                <div class="splitter">⬤</div>
+                                <div class="data">
+                                    <h3>Volunteering Activities</h3>
+                                    <p>Since 2012, I have attended numerous art contests such as painting,
+                                        blogging, and story writing and have gained a lot of experience and new insight.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2><i class="fas fa-mouse"></i>&nbsp; Computer Literacy</h2>
+                        <h3>Confident With</h3>
+                        <div class="skills-container">
+                            <a href="https://en.wikipedia.org/wiki/HTML"><img src="statics/logos/html5.png"
+                                    target="_blank"></i>&nbsp; HTML5</a>
+                            <a href="https://en.wikipedia.org/wiki/CSS"><img src="statics/logos/css3.png"
+                                    target="_blank"></i>&nbsp; CSS</a>
+                            <a href="https://en.wikipedia.org/wiki/JavaScript"><img src="statics/logos/js.png"
+                                    target="_blank"></i>&nbsp; JavaScript</a>
+                            <a href="https://www.djangoproject.com/"><img src="statics/logos/Django.png"
+                                    target="_blank"></i>&nbsp; Django</a>
+                            <a href="https://python.org"><img src="statics/logos/pyhton.png" target="_blank"></i>&nbsp;
+                                Python</a>
+                            <a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank"><img
+                                    src="statics/logos/c++.png"></i>&nbsp; C++</a>
+                            <a href="https://github.com/"><img src="statics/logos/GitHub.png" target="_blank"></i>&nbsp;
+                                GitHub</a>
+                            <a href="https://scikit-learn.org/stable/"><img src="statics/logos/Scikit-learn.png"
+                                    target="_blank"></i>&nbsp; Scikit Learn</a>
+                            <a href="https://matplotlib.org/"><img src="statics/logos/Matplotlib.png"
+                                    target="_blank"></i>&nbsp; Matplotlib</a>
+                            <a href="https://www.microsoft.com/en-ca/windows" target="_blank"><img
+                                    src="statics/logos/windows.png"></i>&nbsp; Windows</a>
+                            <a href="https://en.wikipedia.org/wiki/Cmd.exe" target="_blank"><img
+                                    src="statics/logos/Windows-CMD.png"></i>&nbsp; Windows Command Line</a>
+                            <a href="https://www.adobe.com/ca/products/photoshop.html"><img
+                                    src="statics/logos/photoshop.png" target="_blank"></i>&nbsp; Adobe Photoshop</a>
+                            <a href="https://www.microsoft.com/en-us/microsoft-365/word"><img
+                                    src="statics/logos/Word.ico" target="_blank"></i>&nbsp; Microsoft Word</a>
+                            <a href="https://www.microsoft.com/en-us/microsoft-365/powerpoint"><img
+                                    src="statics/logos/Powerpoint.png" target="_blank"></i>&nbsp; Microsoft
+                                Powerpoint</a>
+                        </div>
+                        <h3>Able to use</h3>
+                        <div class="skills-container">
+                            <a href="https://www.tensorflow.org/" target="_blank"><img
+                                    src="statics/logos/Tensorflow.png"></i>&nbsp; Tensorflow</a>
+                            <a href="https://flask.palletsprojects.com/en/2.0.x/" target="_blank"><img
+                                    src="statics/logos/Flask.png"></i>&nbsp; Flask</a>
+                            <a href="https://en.wikipedia.org/wiki/Linux" target="_blank"><img
+                                    src="statics/logos/linux.png"></i>&nbsp; Linux</a>
+                            <a href="https://en.wikipedia.org/wiki/Linux_console" target="_blank"><img
+                                    src="statics/logos/Linux-Terminal.png"></i>&nbsp; Linux Console</a>
+                            <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)" target="_blank"><img
+                                    src="statics/logos/Bash.png"></i>&nbsp; Bash</a>
+                            <a href="https://www.gimp.org/"><img src="statics/logos/Gimp.png" target="_blank"></i>&nbsp;
+                                Gimp</a>
+                            <a href="https://www.comptia.org/certifications/network" target="_blank"><img
+                                    src="statics/logos/network-plus.png"></i>&nbsp; Network+</a>
+                            <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"><img
+                                    src="statics/logos/c.png"></i>&nbsp; C</a>
+                            <a href="https://www.php.net/"><img src="statics/logos/php.png" target="_blank">&nbsp;
+                                php</a>
+                            <a href="https://www.adobe.com/ca/products/premiere.html"><img
+                                    src="statics/logos/Premiere.png" target="_blank"></i>&nbsp; Adobe Premiere</a>
+                            <a href="https://www.microsoft.com/en-us/microsoft-365/excel"><img
+                                    src="statics/logos/Excel.png" target="_blank"></i>&nbsp; Microsoft Excel</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2><i class="fas fa-table-tennis"></i>&nbsp; Skills & Hobbies</h2>
+                        <div id="hobbies-container">
+                            <div class="hobby-card">
+                                <div class="card-bg" style="background-image: url(statics/images/hobbies/Chess.webp);">
+                                </div>
+                                <div class="card-data">
+                                    <h1>Chess</h1>
+                                    <p>You can find me at chess.com!<br /><a href="https://friend.chess.com/8oza"
+                                            target="_blank" class="link">Click
+                                            here</a> to become a friend :)</p>
+                                </div>
+                            </div>
+                            <div class="hobby-card">
+                                <div class="card-bg" style="background-image: url(statics/images/hobbies/camping.jpg);">
+                                </div>
+                                <div class="card-data">
+                                    <h1>Camping</h1>
+                                    <p>I love adventures! Especially in mountains and when surrounded by the wonders of
+                                        nature.</p>
+                                </div>
+                            </div>
+                            <div class="hobby-card">
+                                <div class="card-bg"
+                                    style="background-image: url(statics/images/hobbies/table-tennis.png);"></div>
+                                <div class="card-data">
+                                    <h1>Table Tennis</h1>
+                                    <p>The only real sport I play.</p>
+                                </div>
+                            </div>
+                            <div class="hobby-card">
+                                <div class="card-bg" style="background-image: url(statics/images/hobbies/piano.jpg);">
+                                </div>
+                                <div class="card-data">
+                                    <h1>Music</h1>
+                                    <p>Sometimes, I make short piano pieces with
+                                        digital softwares like Fl Studio. But I can't put them here. This website
+                                        is taking me a lot of time already :(</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2><i class="fas fa-user-graduate"></i>&nbsp; Education</h2>
+                        <div class="inner-dot-list">
+                            <div>
+                                <div class="info">
+                                    Victoria, BC<br />
+                                    2021 - Now
+                                </div>
+                                <div class="splitter">⬤</div>
+                                <div class="data">
+                                    <h3>Expected Bachelor of Computer Science</h3>
+                                    <p>University of Victoria - In-progress</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="info">
+                                    Vancouver, BC<br />
+                                    2020 - 2021
+                                </div>
+                                <div class="splitter">⬤</div>
+                                <div class="data">
+                                    <h3>Senior High School</h3>
+                                    <p>Pattison High School - GPA: 96.25%</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="info">
+                                    Tehran, Iran<br />
+                                    2018 - 2020
+                                </div>
+                                <div class="splitter">⬤</div>
+                                <div class="data">
+                                    <h3>Senior High School (Mathematics and Physics Specialization)</h3>
+                                    <p>Mehraein High School - GPA: 99.55%</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="info">
+                                    Tehran, Iran<br />
+                                    2015 - 2018
+                                </div>
+                                <div class="splitter">⬤</div>
+                                <div class="data">
+                                    <h3>Junior High School</h3>
+                                    <p>Mehraein High School - GPA: 99.65%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
