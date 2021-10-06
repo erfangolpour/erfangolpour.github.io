@@ -1,2 +1,2 @@
 # erfangolpour.github.io
-A small personal portfolio :)
+A simple personal portfolio :)
