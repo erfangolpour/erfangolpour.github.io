@@ -114,3 +114,23 @@ Array.from(resumeMenu).forEach(child => {
     }
   })
 })
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("horizontal-navigation").style.top = "0";
+    document.getElementById("vertical-navigation").style.top = "0";
+  } else {
+    document.getElementById("horizontal-navigation").style.top = "-100px";
+    document.getElementById("vertical-navigation").style.top = "-100px";
+    document.getElementById("show-menu").checked = false;
+  }
+  prevScrollpos = currentScrollPos;
+
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("horizontal-navigation").style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+  } else {
+    document.getElementById("horizontal-navigation").style.backgroundColor = "transparent";
+  }
+} 
