@@ -1,21 +1,19 @@
-import { GlowingEffectDemo } from "./components/Glowing/Glowing";
-import { Hero } from './components/Hero/Hero';
-import { Projects } from './components/Projects';
+import { Hero } from "./components/Hero";
+import { Projects } from "./components/Projects";
+import { BentoGridThirdDemo } from "./components/Skills/Skills";
 import { TimelineDemo } from "./components/Timeline/TimelineDemo";
+import { GlowingEffectDemo } from "./components/Glowing/Glowing";
 
 function App() {
   return (
     <>
       <Hero />
-      <div className='h-100'></div>
+      <BentoGridThirdDemo />
+	  {/* <GlowingEffectDemo /> */}
+	  {/* <TimelineDemo /> */}
       <Projects />
-      <TimelineDemo />
-      <GlowingEffectDemo />
-      <div className='h-200 flex justify-center items-center'>
-        <h1 className='text-4xl'>Hello Vite + React + Tailwind CSS</h1>
-      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

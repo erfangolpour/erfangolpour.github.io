@@ -139,7 +139,7 @@ export function Projects() {
             >
                 <div className="px-6 sm:px-10 md:px-20 py-10 sm:py-16 md:py-40 text-left">
                     <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold dark:text-white mb-4 md:mb-8">
-                        My Projects Portfolio <br className="hidden sm:block" /> Showcasing My Work
+                        Featured Projects <br /> A selection of my work
                     </h1>
                     <p className="max-w-2xl text-base sm:text-lg md:text-xl dark:text-neutral-200">
                         Here are some of the projects I have worked on, showcasing my skills and experience in various areas including web development, TUI tools, algorithm design, and more.
