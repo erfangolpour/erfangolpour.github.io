@@ -1,4 +1,4 @@
-import MineTUIper from "./MineTUIper.png";
+import mineTUIper_UI from "./mineTUIper_UI.png";
 
 // Placeholder for typing animation component - replace with actual implementation
 const TypingText = ({ text }: { text: string }) => (
@@ -76,7 +76,7 @@ export function mineTuiperModalContent() {
 			</div>
 
 			<img
-				src={MineTUIper}
+				src={mineTUIper_UI}
 				alt="Minesweeper Gameplay"
 				className="w-full rounded border border-gray-700 opacity-80"
 			/>
