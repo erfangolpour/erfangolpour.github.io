@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@font-face {
+	font-family: "HelveticaNow";
+	src: url("./assets/fonts/dHHUz45rhM2KCQpj9zttNVlibk.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Stylish";
+	font-style: normal;
+	src: url("./assets/fonts/stylish.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Stylish";
+	font-style: italic;
+	src: url("./assets/fonts/stylish-italic.woff2") format("woff2");
+}
+
+:root {
+	@apply font-[HelveticaNow];
+	@apply bg-neutral-950 text-neutral-50;
+	@apply antialiased md:subpixel-antialiased;
+}
+
+html {
+	@apply scroll-smooth;
+}
+
+* {
+	@apply outline-0;
+	@apply box-border;
+}
