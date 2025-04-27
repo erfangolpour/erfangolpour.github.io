@@ -56,7 +56,7 @@ export function WaveRiderModalContent() {
 					<li>Music-synchronized gameplay</li>
 					<li>Real-time audio visualizations</li>
 					<li>Dynamic environments based on genre/mood</li>
-					<li>**Import your own music!** (MP3, WAV, M4A)</li>
+					<li>Import your own music! (MP3, WAV, M4A)</li>
 					<li>Leaderboard competition</li>
 					<li>Cross-Platform (Web & Windows)</li>
 					<li>Slow-motion time effects</li>
