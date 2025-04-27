@@ -2,6 +2,13 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { useEffect } from "react";
 
+import markerIcon from "../../../node_modules/leaflet/dist/images/marker-icon.png";
+L.Marker.prototype.setIcon(
+	L.icon({
+		iconUrl: markerIcon,
+	}),
+);
+
 export default function MapComponent() {
 	useEffect(() => {
 		// Only run this on client-side
