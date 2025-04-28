@@ -1,14 +1,101 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/fav.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Erfan Golpour - Portfolio</title>
-    <script type="module" crossorigin src="/assets/index-CLOpB0Lz.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DBFM74BW.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/fav.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Erfan Golpour - Portfolio</title>
+
+		<!-- Preload critical fonts -->
+		<link
+			rel="preload"
+			href="/assets/dHHUz45rhM2KCQpj9zttNVlibk-CuzTl3Q5.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/assets/stylish-CwvVGij3.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/assets/stylish-italic-BWo3BdX3.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+
+		<!-- Inline critical CSS to prevent FOUC -->
+		<style>
+			.resources-loading {
+				visibility: hidden;
+			}
+			body {
+				background-color: #09090b;
+				margin: 0;
+			}
+			.initial-loader {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: #09090b;
+				z-index: 9999;
+			}
+		</style>
+		<script type="module" crossorigin src="/assets/index-BR34b7wy.js"></script>
+		<link rel="stylesheet" crossorigin href="/assets/index-BwEbG8uY.css">
+	</head>
+	<body class="resources-loading">
+		<!-- Initial spinner that shows even before JS loads -->
+		<div class="initial-loader" id="initial-loader">
+			<div
+				style="
+					width: 40px;
+					height: 40px;
+					border: 4px solid rgba(255, 255, 255, 0.1);
+					border-radius: 50%;
+					border-top-color: white;
+					animation: initial-spin 1s linear infinite;
+				"
+			></div>
+		</div>
+
+		<div id="root"></div>
+
+		<!-- Remove initial loader when React mounts -->
+		<script>
+			// This ensures we don't see two loaders - React will take over
+			window.addEventListener("DOMContentLoaded", function () {
+				setTimeout(function () {
+					var initialLoader =
+						document.getElementById("initial-loader");
+					if (initialLoader && initialLoader.parentNode) {
+						initialLoader.parentNode.removeChild(initialLoader);
+					}
+				}, 500); // Small delay to ensure React has time to mount its loader
+			});
+		</script>
+
+		<!-- Animation for initial spinner -->
+		<style>
+			@keyframes initial-spin {
+				0% {
+					transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+		</style>
+
+	</body>
 </html>
