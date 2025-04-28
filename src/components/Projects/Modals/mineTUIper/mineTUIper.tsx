@@ -1,17 +1,41 @@
+import { useEffect, useState } from "react";
 import mineTUIper_UI from "./mineTUIper_UI.png";
 
-// Placeholder for typing animation component - replace with actual implementation
-const TypingText = ({ text }: { text: string }) => (
-	<span className="font-mono">{text}</span> // Basic placeholder
-	// TODO: Implement CSS or JS typing animation here for a typewriter effect
-);
+// Simplified typing animation component - no need to check font loading
+const TypingText = ({ text }: { text: string }) => {
+	const [displayText, setDisplayText] = useState("");
+
+	useEffect(() => {
+		let index = 0;
+		let typingInterval: number;
+
+		// Start typing after a small delay
+		const startTimeout = setTimeout(() => {
+			typingInterval = setInterval(() => {
+				if (index < text.length) {
+					setDisplayText(text.substring(0, index + 1));
+					index++;
+				} else {
+					clearInterval(typingInterval);
+				}
+			}, 100);
+		}, 400);
+
+		return () => {
+			clearTimeout(startTimeout);
+			clearInterval(typingInterval);
+		};
+	}, [text]);
+
+	// Show a blinking cursor effect
+	return <span className="relative font-mono">{displayText}</span>;
+};
 
 export function mineTuiperModalContent() {
 	return (
 		<div className="space-y-6 bg-black p-6 font-mono text-green-400 md:p-8">
 			<div className="text-center">
 				<h3 className="text-3xl font-bold text-yellow-400">
-					{/* [ANIMATION: Typing effect] */}
 					<TypingText text="[ mineTUIper ]" />
 				</h3>
 				<p className="mt-2 text-lime-400">

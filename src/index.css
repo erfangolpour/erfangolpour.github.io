@@ -3,18 +3,51 @@
 @font-face {
 	font-family: "HelveticaNow";
 	src: url("./assets/fonts/dHHUz45rhM2KCQpj9zttNVlibk.woff2") format("woff2");
+	font-display: swap;
 }
 
 @font-face {
 	font-family: "Stylish";
 	font-style: normal;
 	src: url("./assets/fonts/stylish.woff2") format("woff2");
+	font-display: swap;
 }
 
 @font-face {
 	font-family: "Stylish";
 	font-style: italic;
 	src: url("./assets/fonts/stylish-italic.woff2") format("woff2");
+	font-display: swap;
+}
+
+/* Prevents flash of unstyled content */
+.resources-loading {
+	visibility: hidden;
+}
+
+.resources-loaded {
+	visibility: visible;
+	animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* Cursor blinking animation for typing effect */
+@keyframes blink {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
 }
 
 :root {

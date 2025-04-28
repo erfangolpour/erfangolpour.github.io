@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { RefObject, useCallback, useEffect, useRef, useState } from "react";
 import { createNoise3D } from "../utils/SimplexNoise";
 
-// Optimized typing effect hook
+// Optimized typing effect hook - simplified since we know resources are loaded
 function useTypingEffect(
 	containerRef: RefObject<HTMLDivElement | null>,
 	text: string,
@@ -32,6 +32,7 @@ function useTypingEffect(
 	}, []);
 
 	useEffect(() => {
+		// Only check visibility now since we know fonts are loaded
 		if (!isVisible) return;
 
 		let typingTimeout: number;
@@ -245,12 +246,12 @@ export function Hero() {
 					</div>
 				</motion.div>
 
-				{/* Scroll indicator */}
+				{/* Scroll indicator - only show after typing is done */}
 				<motion.div
 					className="absolute bottom-12 left-1/2 flex -translate-x-1/2 transform flex-col items-center"
 					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ delay: 2, duration: 1 }}
+					animate={{ opacity: displayText.length > 0 ? 1 : 0 }}
+					transition={{ delay: 1, duration: 1 }}
 				>
 					<span className="mb-2 text-sm opacity-70">
 						Scroll to explore
