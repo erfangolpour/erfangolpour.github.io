@@ -371,7 +371,7 @@ export function Projects() {
 			<div
 				id="projects"
 				ref={containerRef}
-				className="relative my-[30vh] w-full overflow-x-clip antialiased [perspective:1000px] [transform-style:preserve-3d]"
+				className="relative my-[10vh] w-full overflow-x-clip antialiased [perspective:1000px] [transform-style:preserve-3d] md:my-[30vh]"
 			>
 				{/* Intro text */}
 				<div className="space-y-8 px-6 sm:px-10 md:px-20">
@@ -394,7 +394,7 @@ export function Projects() {
 						translateY,
 						opacity,
 					}}
-					className="mt-60 flex flex-col gap-[4vw]"
+					className="mt-20 flex flex-col gap-[4vw] sm:mt-60"
 				>
 					{Array.from({ length: Math.ceil(projects.length / 4) }).map(
 						(_, rowIndex) => (
@@ -415,7 +415,7 @@ export function Projects() {
 												backgroundImage: `url(${project.thumbnail})`,
 											}}
 											onClick={() => setActive(project)}
-											className="group/project h-[45vh] w-[70vw] flex-none cursor-pointer rounded-xl bg-cover bg-center hover:shadow-2xl md:w-[40vw] 2xl:w-[35vw]"
+											className="group/project h-[30vh] w-[90vw] flex-none cursor-pointer rounded-xl bg-cover bg-center hover:shadow-2xl sm:w-[50vw] md:w-[40vw] xl:h-[45vh] 2xl:w-[35vw]"
 											key={`${project.title}-project`}
 										>
 											<motion.div
