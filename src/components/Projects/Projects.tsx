@@ -160,11 +160,11 @@ export function Projects() {
 				"A user-friendly interface to interact with The Metropolitan Museum of Art Collection API.",
 			liveLink:
 				"https://erfangolpour.github.io/The-Metropolitan-Museum-of-Art/",
-			link: "https://erfangolpour.github.io/The-Metropolitan-Museum-of-Art/",
+			link: "https://github.com/erfangolpour/The-Metropolitan-Museum-of-Art/",
 			thumbnail: MMOA,
 			modalBgColor: "bg-stone-900",
 			modalTextColor: "text-stone-200",
-			linkText: "Explore the Collection Interface",
+			linkText: "View on GitHub",
 			ModalContentComponent: MMOAModalContent, // Ensure you created this component
 		},
 		{
@@ -209,7 +209,7 @@ export function Projects() {
 			thumbnail: AOM,
 			modalBgColor: "bg-gradient-to-b from-stone-800 to-stone-900",
 			modalTextColor: "text-stone-200",
-			linkText: "Explore the Visualization",
+			linkText: "View on GitHub",
 			ModalContentComponent: AOMModalContent, // Ensure you created this component
 		},
 		{
@@ -228,11 +228,11 @@ export function Projects() {
 			description:
 				"A modern task management app with hierarchical organization, featuring dual List/Graph views.",
 			liveLink: "https://tasktree.vercel.app/",
-			link: "https://tasktree.vercel.app/",
+			link: "https://github.com/erfangolpour/TaskTree",
 			thumbnail: TaskTree,
 			modalBgColor: "bg-neutral-900",
 			modalTextColor: "text-neutral-100",
-			linkText: "Try TaskTree Live",
+			linkText: "View on GitHub",
 			ModalContentComponent: TaskTreeModalContent,
 		},
 		{
