@@ -204,8 +204,8 @@ export function Projects() {
 			title: "The Art of Mathematics",
 			description:
 				"Demonstrating how mathematical functions naturally occur in art, nature, and industry.",
-			liveLink: "https://theartofmathematics.github.io/",
-			link: "https://theartofmathematics.github.io/",
+			liveLink: "https://erfangolpour.github.io/the-art-of-mathematics/",
+			link: "https://github.com/erfangolpour/the-art-of-mathematics",
 			thumbnail: AOM,
 			modalBgColor: "bg-gradient-to-b from-stone-800 to-stone-900",
 			modalTextColor: "text-stone-200",
